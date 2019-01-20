@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Submit from './Submit';
+import Form from './Form';
 
 class Nurse extends Component {
   render() {
     return (
-     
-
+    
   <div>
       <div className="App">
       <div id="home">
@@ -15,13 +16,10 @@ class Nurse extends Component {
             <ul class="navbar-nav ml-auto">
               <li>
                 <div class="dropdown">
-                  <button type="button" class="btn btn-primary dropdown-toggle! dashboard">
+                  <button onClick={() => { document.location.href = "Home"; }} type="button" class="btn btn-primary dropdown-toggle! dashboard"> 
                     Back
                   </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Nurse Dashboard</a>
-                      <a class="dropdown-item" href="#">Doctor Dashboard</a>
-                  </div>
+          
                 </div>
               </li>
             </ul> 
@@ -36,42 +34,8 @@ class Nurse extends Component {
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-        <form>
-          <div class="form-group colos">
-              <label for="exampleFormControlInput1">Patient Label</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-              </input>
-          </div>
-
-
-          <div class="form-group colos">
-              <label for="exampleFormControlInput1">Reason</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-              </input>
-          </div>
-
-          <div class="form-group colos">
-              <label for="exampleFormControlInput1">Gender</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-              </input>
-          </div>
-
-          
-      <div class="form-group">
-          <label for="exampleFormControlTextarea1">Health History</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-    
-      
-      <div class="form-group">
-          <label for="exampleFormControlTextarea1">Description</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-     <div class = "pos"> <button type="button pos" class="btn btn-primary dropdown-toggle! dashboard"> Send </button> </div>
-      
-    </form>
-         </div>
+          <Form />
+        </div>
       </div>
     </div>
   </div> 

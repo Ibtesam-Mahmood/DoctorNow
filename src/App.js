@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './firebase/firebase';
 
 class App extends Component {
   render() {
@@ -17,8 +18,8 @@ class App extends Component {
                         Dashboard
                       </button>
                       <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Nurse Dashboard</a>
-                          <a class="dropdown-item" href="#">Doctor Dashboard</a>
+                          <a  onClick={() => { document.location.href = "nurse"; }}class="dropdown-item" href="#">Nurse Dashboard</a>
+                          <a  onClick={() => { document.location.href = "doctor"; }}class="dropdown-item" href="#">Doctor Dashboard</a>
                       </div>
                     </div>
                   </li>
