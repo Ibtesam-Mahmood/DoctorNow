@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import './firebase/firebase';
-import './components/Camera.js';
 import { runInContext } from 'vm';
 
 class App extends Component {
