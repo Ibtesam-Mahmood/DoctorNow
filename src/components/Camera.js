@@ -21,7 +21,7 @@ class Camera extends React.Component {
       }
     };
   }
- 
+  
   render() {
     return (
       <OTSession apiKey="46254302" 
@@ -31,6 +31,9 @@ class Camera extends React.Component {
           properties={this.publisherProperties}
           eventHandlers={this.publisherEventHandlers}
         />
+        <OTStreams>
+          <OTSubscriber/>
+        </OTStreams>
       </OTSession>
     );
   }
