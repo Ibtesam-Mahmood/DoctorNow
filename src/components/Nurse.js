@@ -30,45 +30,46 @@ class Nurse extends Component {
       </nav>
     </div>
    </div> 
-  
-
-  
-  
-  <div class = "fourmpadding">
- <a class = "titlepadding"> Patient Fourm </a> 
+    
+<div class = "fourmpadding">
+ 
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
         <form>
           <div class="form-group colos">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="exampleFormControlInput1">Patient Label</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
               </input>
           </div>
+
+
+          <div class="form-group colos">
+              <label for="exampleFormControlInput1">Reason</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </input>
+          </div>
+
+          <div class="form-group colos">
+              <label for="exampleFormControlInput1">Gender</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </input>
+          </div>
+
+          
       <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-               <select class="form-control" id="exampleFormControlSelect1">
-                     <option>1</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option>5</option>
-               </select>
+          <label for="exampleFormControlTextarea1">Health History</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
+    
+      
       <div class="form-group">
-        <label for="exampleFormControlSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+
+     <div class = "pos"> <button type="button pos" class="btn btn-primary dropdown-toggle! dashboard"> Send </button> </div>
+      
     </form>
          </div>
       </div>

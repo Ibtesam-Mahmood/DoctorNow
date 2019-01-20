@@ -13,10 +13,13 @@ code {
     monospace;
 }
 
+.pos
+{
+  text-align: right; 
+}
 
 .fourmpadding
 {
-
   margin-top: 10%; 
   margin-left: 500px;
 }
