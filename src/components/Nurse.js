@@ -4,7 +4,8 @@ class Nurse extends Component {
   render() {
     return (
      
-<div>
+
+  <div>
       <div className="App">
       <div id="home">
        <nav class="navbar navbar-light navbar-expand-xl fixed-top text-capitalize">
@@ -14,8 +15,8 @@ class Nurse extends Component {
             <ul class="navbar-nav ml-auto">
               <li>
                 <div class="dropdown">
-                  <button type="button" class="btn btn-primary dropdown-toggle! dashboard" data-toggle="dropdown">
-                    Dashboard
+                  <button type="button" class="btn btn-primary dropdown-toggle! dashboard">
+                    Back
                   </button>
                   <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Nurse Dashboard</a>
@@ -29,10 +30,17 @@ class Nurse extends Component {
       </nav>
     </div>
    </div> 
-   
-      <div class="jumbotron"> 
-      <form>
-          <div class="form-group">
+  
+
+  
+  
+  <div class = "fourmpadding">
+ <a class = "titlepadding"> Patient Fourm </a> 
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+        <form>
+          <div class="form-group colos">
               <label for="exampleFormControlInput1">Email address</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </input>
@@ -62,10 +70,12 @@ class Nurse extends Component {
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </form>
+         </div>
+      </div>
+    </div>
+  </div> 
 
-    </div> 
-
-    </div> 
+</div> 
     ); 
 
   }
