@@ -32,7 +32,7 @@ class Nurse extends Component {
    </div> 
     
 <div class = "fourmpadding">
- 
+   <a> Patient Fourm </a>
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
