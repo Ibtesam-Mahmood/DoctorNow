@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './firebase/firebase';
+import { runInContext } from 'vm';
 
 class App extends Component {
   render() {
@@ -38,7 +39,7 @@ class App extends Component {
             <div class="caption">
                 <h2 class = "doctor">Doctor<b class = "vote doctor">Now.</b> </h2> 
                 <h4>Quote that is related to health care here</h4>
-                <a class="btn btn-outline-dark landingButton" href= ""> Sign Up </a>
+                <a class="btn btn-outline-dark landingButton" onClick={() => { document.location.href = "camera"; }}> Sign Up </a>
                 <a class="btn btn-outline-dark landingButton2" href=""> View Dashboard </a>
             </div> 
       </div>

@@ -7,6 +7,7 @@
     "@material-ui/icons": "^3.0.2",
     "firebase": "^5.8.0",
     "firebaseui": "^3.5.2",
+    "opentok-react": "^0.9.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3"
