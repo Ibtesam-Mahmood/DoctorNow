@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Recieve from './Recieve';
 import Form from './Form';
 
+import Camera from './Camera';
+
 import firebase from 'firebase';
 import '../firebase/firebase'
 
@@ -17,21 +19,21 @@ var val;
 
 // determine if there is data to recieve
 
-function buildForm() {
-  console.log('clicked');
-  db.ref()
-  .once('value')
-  .then((snapshot) => {
-    val = snapshot.val(); 
-    if (val.test1 != "") {
-      foundData = true;
-      return val;
-    }
-  })
-  .catch((e) => {
-    console.log(e);
-  })
-};
+db.ref()
+.once('value')
+.then((snapshot) => {
+  val = snapshot.val(); 
+  if (val.test1 != "") {
+    foundData = true;
+    console.log(val);
+  }
+})
+.catch((e) => {
+  console.log(e);
+})
+
+console.log(val); 
+
 
 /*
 class Doctor extends Component {
@@ -70,14 +72,14 @@ class Doctor extends Component {
           </div>
         </div> 
       </nav>
-
     </div>
    </div> 
 
 <div class="vertical-menu">
   <a href="#" class="active">Patient Waitlist</a>
-  <a href="#"><img src={greenBut} /> John Smith </a>
-  <a href="#"><img src={greenBut} /> Sam Jones</a>
+  {/* <a href="#"><img src={val.desc != "" ? greenBut : ''} />{val.desc != "" ? 'nurse 1' : ''}</a> */}
+  <a href="#"><img src={greenBut} /> Nurse 1 </a>
+  {/* <a href="#"><img src={greenBut} /> Sam Jones</a>
   <a href="#"><img src={greenBut} /> Susan Denn</a>
   <a href="#"><img src={greenBut} /> Chris Rice</a>
   <a href="#"><img src={yelBut} /> Francis Do</a>
@@ -87,11 +89,11 @@ class Doctor extends Component {
   <a href="#"><img src={redBut} /> Kris Frash</a>
   <a href="#"><img src={redBut} /> Travis Wilson</a>
   <a href="#"><img src={redBut} /> Isaac Wattson</a>
-  <a href="#"><img src={redBut} /> Darious Torre</a>
+  <a href="#"><img src={redBut} /> Darious Torre</a> */}
 </div>
-    
-<div class = "fourmpadding">
 
+<div class = "fourmpadding">
+<Camera />
    <a> John Smith </a>
     <div class="col-sm-6">
       <div class="card">
@@ -121,7 +123,7 @@ class Doctor extends Component {
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
-     <div class = "pos"> <button type="button pos" class="btn btn-primary dropdown-toggle! dashboard"> Send </button> </div>
+     <div class = "pos"> <button type="button pos" class="btn btn-primary dropdown-toggle! dashboard"> Open Camera </button> </div>
       
     </form>
          </div>
