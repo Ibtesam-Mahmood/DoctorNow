@@ -5,6 +5,7 @@ import App from './App';
 
 import Nurse from '../src/components/Nurse';
 import Doctor from '../src/components/Doctor';
+import Camera from '../src/components/Camera'
 
 import * as serviceWorker from './serviceWorker';
 
@@ -17,7 +18,10 @@ if (user.type == "nurse")  {
     ReactDOM.render(<Nurse />, document.getElementById('root'));
 } else if(user.type == "doctor") {
     ReactDOM.render(<Doctor />, document.getElementById('root'));
-} else {
+} else if(user.type == "camera") {
+    ReactDOM.render(<Camera />, document.getElementById('root'));
+}
+else {
     ReactDOM.render(<App />, document.getElementById('root'));
 }
 
