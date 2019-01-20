@@ -9,7 +9,7 @@ import Doctor from '../src/components/Doctor';
 import * as serviceWorker from './serviceWorker';
 
 var user = {
-    type: "nurse"
+    type: "doctor"
 };
 
 // Get user from databasse after sign in using firebase ... 
