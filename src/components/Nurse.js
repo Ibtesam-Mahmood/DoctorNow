@@ -35,6 +35,9 @@ class Nurse extends Component {
       <div class="card">
         <div class="card-body">
           <Form />
+          <button onClick={() => { document.location.href = "camera"; }} type="button" class="btn btn-primary dropdown-toggle! dashboard"> 
+            Open Camera
+          </button>
         </div>
       </div>
     </div>

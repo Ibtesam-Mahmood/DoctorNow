@@ -59,7 +59,7 @@ class Doctor extends Component {
             <ul class="navbar-nav ml-auto">
               <li>
                 <div class="dropdown">
-                  <button type="button" class="btn btn-primary dropdown-toggle! dashboard">
+                  <button type="button" onClick={() => { document.location.href = "HOME"; }} class="btn btn-primary dropdown-toggle! dashboard">
                     Back
                   </button>
                   <div class="dropdown-menu">
@@ -78,7 +78,7 @@ class Doctor extends Component {
 <div class="vertical-menu">
   <a href="#" class="active">Patient Waitlist</a>
   {/* <a href="#"><img src={val.desc != "" ? greenBut : ''} />{val.desc != "" ? 'nurse 1' : ''}</a> */}
-  <a href="#"><img src={greenBut} /> Nurse 1 </a>
+  <a href="#"><img src={greenBut} /> John Smith </a>
   {/* <a href="#"><img src={greenBut} /> Sam Jones</a>
   <a href="#"><img src={greenBut} /> Susan Denn</a>
   <a href="#"><img src={greenBut} /> Chris Rice</a>
@@ -93,7 +93,9 @@ class Doctor extends Component {
 </div>
 
 <div class = "fourmpadding">
+
 <Camera />
+
    <a> John Smith </a>
     <div class="col-sm-6">
       <div class="card">
@@ -103,7 +105,7 @@ class Doctor extends Component {
 
           <div class="form-group colos">
               <label for="exampleFormControlInput1">General Appearance</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">- Headaches and nNausea</textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">- Headaches</textarea>
           </div>
 
           <div class="form-group colos">
@@ -122,8 +124,6 @@ class Doctor extends Component {
           <label for="exampleFormControlTextarea1">Description</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-
-     <div class = "pos"> <button type="button pos" class="btn btn-primary dropdown-toggle! dashboard"> Open Camera </button> </div>
       
     </form>
          </div>
